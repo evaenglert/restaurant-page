@@ -1,0 +1,97 @@
+* {
+  border: 1px black solid;
+  margin: 0px;
+}
+
+html, body, #content {
+  height: 100%;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: rgb(2, 2, 139);
+}
+
+.restaurant-name {
+  color: red;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0px;
+
+  font-size: 20px;
+  color: rgb(173, 173, 173);
+}
+
+#main-content {
+  background-image: url('./restaurant_image.jpeg');
+}
+
+#main-content .greeting {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+
+#main-content h1 {
+  color: red;
+  text-align: center;
+}
+
+button {
+  background-color: red;
+  color: rgb(222, 222, 222);
+  border: none;
+  outline: none;
+
+  border-radius: 15px;
+  padding: 10px;
+
+}
+
+.restaurant-info {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, 0%);
+
+  background-color: black;
+  opacity: 0.5;
+
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.restaurant-info p {
+  font-weight: bold;
+  color: white;
+}
+
+.address, .opening-time {
+  display: flex;
+  flex-direction: column;
+}
