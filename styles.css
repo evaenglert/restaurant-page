@@ -1,5 +1,4 @@
 * {
-  border: 1px black solid;
   margin: 0px;
 }
 
@@ -16,11 +15,11 @@ nav {
   display: flex;
   justify-content: space-around;
 
-  background-color: rgb(2, 2, 139);
+  background-color: rgb(92, 92, 138);
 }
 
 .restaurant-name {
-  color: red;
+  color: rgb(150, 41, 41);
   font-size: 30px;
   display: flex;
   align-items: center;
@@ -30,7 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
   list-style-type: none;
   padding: 0px;
 
@@ -40,6 +39,8 @@ nav {
 
 #main-content {
   background-image: url('./restaurant_image.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #main-content .greeting {
@@ -51,23 +52,31 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
 
 #main-content h1 {
   color: red;
+  font-size: calc(2rem + 2vw);
+  text-align: center;
+}
+
+#main-content h3 {
+  color: rgb(219, 122, 122);
+  font-size: 25px;
   text-align: center;
 }
 
 button {
+  font-size: 20px;
   background-color: red;
   color: rgb(222, 222, 222);
   border: none;
   outline: none;
 
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 10px;
 
 }
@@ -78,12 +87,18 @@ button {
   top: 70%;
   transform: translate(-50%, 0%);
 
+  width: calc(15rem + 25vw);
+  /* height: calc(15rem + 5vw); */
+
   background-color: black;
   opacity: 0.5;
 
   padding: 10px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  font-size: 20px;
 }
 
 .restaurant-info p {
