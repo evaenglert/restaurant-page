@@ -1,1 +1,5 @@
-console.log("HEllo!")
+import {displayHomePage} from './home.js'
+
+
+
+displayHomePage
