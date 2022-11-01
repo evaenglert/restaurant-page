@@ -110,3 +110,42 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+
+#food-menu {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 45px;
+}
+
+.menu-food-items {
+  background-color: bisque;
+  justify-content: space-between;
+  margin: 5rem auto;
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-item span {
+  display: flex;
+
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.food-info {
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 1px black dashed;
+}
+
+.food-price {
+  color: red;
+}
