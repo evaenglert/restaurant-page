@@ -1,6 +1,6 @@
 // for displaying the menu that is available
 
-const displayMenu = (() =>
+const displayMenuPage = (() =>
 {
 
   const content = document.querySelector('#content');
@@ -74,6 +74,14 @@ const displayMenu = (() =>
   }
 
   createFoodItem('Hamburger', '$2.49', 'Buns, patty, tomato, onions, lettuce, and our secret family recipe.');
+  createFoodItem('Cheeseburger', '$2.99', 'Similar to our hamburger, but with cheese.');
+  createFoodItem('Double Cheeseburger', '$3.49', 'Similar to our cheeseburger, but with an extra patty.');
+  createFoodItem('Steak', '$8.99', 'A juicy steak made just how you like it.');
+  createFoodItem('BBQ Ribs', '$8.99', 'Barbecue ribs with your choice of a add-ons.');
+  createFoodItem('Grilled Cheese Sandwich', '$4.99', 'A toasted and grilled cheese sandwich, dipped in our special sauce.');
+  createFoodItem('Caesar Salad', '$7.99', 'Your typical caesar salad that comes with your choice of dressings.');
+  createFoodItem('French Fries', '$1.99', "Sometimes you don't want to eat your burger alone, why not add some french fries ?");
+
 
   main_content.appendChild(food_menu);
   main_content.appendChild(menu_food_items);
@@ -83,7 +91,7 @@ const displayMenu = (() =>
 
 
 
-})()
+});
 
 
-export {displayMenu}
+export {displayMenuPage}
