@@ -1,14 +1,12 @@
-//  create a module here, that loads in everything needed for the home page
+const displayContactPage = (() => {
 
-const displayHomePage = (() =>
-{
   const content = document.querySelector('#content');
 
   const nav = document.createElement('nav');
 
   const restaurant_name = document.createElement('h2');
   restaurant_name.classList.add('restaurant-name');
-  restaurant_name.textContent ='Food-On-A-Plate';
+  restaurant_name.textContent = 'Food-On-A-Plate';
 
   const menu_items = document.createElement('ul');
   menu_items.classList.add('menu-items');
@@ -35,22 +33,52 @@ const displayHomePage = (() =>
   const main_content = document.createElement('div');
   main_content.setAttribute('id', 'main-content');
 
-  const greeting = document.createElement('div');
-  greeting.classList.add('greeting');
 
-  const greeting_one = document.createElement('h1');
-  greeting_one.textContent = 'Come on down for some delicious cuisine!';
+  const contact_title = document.createElement('h2');
+  contact_title.setAttribute('id', 'page-title');
+  contact_title.textContent = 'Contact';
 
-  const greeting_two = document.createElement('h3');
-  greeting_two.textContent = 'Tasty and affordable!';
+  const contact_page_content = document.createElement('div');
+  contact_page_content.classList.add('contact-page-content');
 
-  const order_button = document.createElement('button');
-  order_button.textContent = 'Order Now';
+  const contact_form = document.createElement('form');
+  contact_form.setAttribute('action', 'example.com/path');
+  contact_form.setAttribute('method', 'post');
 
-  greeting.appendChild(greeting_one);
-  greeting.appendChild(greeting_two);
-  greeting.appendChild(order_button);
+  const message_us = document.createElement('h3');
+  message_us.textContent = 'Message Us';
 
+  const full_name_label = document.createElement('label');
+  full_name_label.setAttribute('for', 'full_name');
+  full_name_label.textContent = 'Full Name';
+
+  const full_name_input = document.createElement('input');
+  full_name_input.setAttribute('type', 'text');
+  full_name_input.setAttribute('id', 'full_name');
+
+  const email_label = document.createElement('label');
+  email_label.setAttribute('for', 'email');
+  email_label.textContent = 'Email';
+
+  const email_input = document.createElement('input');
+  email_input.setAttribute('type', 'text');
+  email_input.setAttribute('id', 'email');
+
+  const message_label = document.createElement('label');
+  message_label.setAttribute('for', 'message');
+  message_label.textContent = 'Type your message...';
+
+  const message_input = document.createElement('input');
+  message_input.setAttribute('type', 'text');
+  message_input.setAttribute('id', 'message');
+
+  contact_form.appendChild(message_us);
+  contact_form.appendChild(full_name_label);
+  contact_form.appendChild(full_name_input);
+  contact_form.appendChild(email_label);
+  contact_form.appendChild(email_input);
+  contact_form.appendChild(message_label);
+  contact_form.appendChild(message_input);
 
   const restaurant_info = document.createElement('div');
   restaurant_info.classList.add('restaurant-info');
@@ -82,13 +110,15 @@ const displayHomePage = (() =>
   restaurant_info.appendChild(address);
   restaurant_info.appendChild(opening_time);
 
-  main_content.appendChild(greeting);
-  main_content.appendChild(restaurant_info);
+
+  contact_page_content.appendChild(restaurant_info);
+  contact_page_content.appendChild(contact_form);
 
   content.appendChild(nav);
-  content.appendChild(main_content);
+  content.appendChild(contact_page_content);
+
+
 
 });
 
-
-export { displayHomePage };
+export {displayContactPage};

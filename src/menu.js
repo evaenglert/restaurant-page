@@ -38,7 +38,7 @@ const displayMenuPage = (() =>
 
 
   const food_menu = document.createElement('h2');
-  food_menu.setAttribute('id', 'food-menu');
+  food_menu.setAttribute('id', 'page-title');
   food_menu.textContent = 'Menu';
 
   const menu_food_items = document.createElement('div');
