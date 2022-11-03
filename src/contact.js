@@ -110,9 +110,8 @@ const displayContactPage = (() => {
   restaurant_info.appendChild(address);
   restaurant_info.appendChild(opening_time);
 
-
-  contact_page_content.appendChild(restaurant_info);
   contact_page_content.appendChild(contact_form);
+  contact_page_content.appendChild(restaurant_info);
 
   content.appendChild(nav);
   content.appendChild(contact_page_content);
