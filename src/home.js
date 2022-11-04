@@ -3,6 +3,7 @@
 const displayHomePage = (() =>
 {
   const content = document.querySelector('#content');
+  const changing_content = document.querySelector('#changing-content');
 
   const nav = document.createElement('nav');
 
@@ -85,8 +86,8 @@ const displayHomePage = (() =>
   main_content.appendChild(greeting);
   main_content.appendChild(restaurant_info);
 
-  content.appendChild(nav);
-  content.appendChild(main_content);
+  // content.appendChild(nav);
+  changing_content.appendChild(main_content);
 
 });
 

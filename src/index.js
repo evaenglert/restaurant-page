@@ -11,19 +11,19 @@ const menu = menu_items[1];
 const contact = menu_items[2];
 
 home.addEventListener('click', () => {
-  const content = document.querySelector('#content');
-  content.innerHTML = "";
+  const changing_content = document.querySelector('#changing-content');
+  changing_content.innerHTML = "";
   displayHomePage()
 });
 
 menu.addEventListener('click', () => {
-  const content = document.querySelector('#content');
-  content.innerHTML = "";
+  const changing_content = document.querySelector('#changing-content');
+  changing_content.innerHTML = "";
   displayMenuPage()
 });
 
 contact.addEventListener('click', () => {
-  const content = document.querySelector('#content');
-  content.innerHTML = "";
+  const changing_content = document.querySelector('#changing-content');
+  changing_content.innerHTML = "";
   displayContactPage()
 });

@@ -1,34 +1,35 @@
 const displayContactPage = (() => {
 
   const content = document.querySelector('#content');
+  const changing_content = document.querySelector('#changing-content');
 
-  const nav = document.createElement('nav');
+  // const nav = document.createElement('nav');
 
-  const restaurant_name = document.createElement('h2');
-  restaurant_name.classList.add('restaurant-name');
-  restaurant_name.textContent = 'Food-On-A-Plate';
+  // const restaurant_name = document.createElement('h2');
+  // restaurant_name.classList.add('restaurant-name');
+  // restaurant_name.textContent = 'Food-On-A-Plate';
 
-  const menu_items = document.createElement('ul');
-  menu_items.classList.add('menu-items');
+  // const menu_items = document.createElement('ul');
+  // menu_items.classList.add('menu-items');
 
-  const menu_item_home = document.createElement('li');
-  menu_item_home.textContent = 'Home';
-  menu_item_home.classList.add('menu-item');
+  // const menu_item_home = document.createElement('li');
+  // menu_item_home.textContent = 'Home';
+  // menu_item_home.classList.add('menu-item');
 
-  const menu_item_menu = document.createElement('li');
-  menu_item_menu.textContent = 'Menu';
-  menu_item_menu.classList.add('menu-item');
+  // const menu_item_menu = document.createElement('li');
+  // menu_item_menu.textContent = 'Menu';
+  // menu_item_menu.classList.add('menu-item');
 
-  const menu_item_contact = document.createElement('li');
-  menu_item_contact.textContent = 'Contact us';
-  menu_item_contact.classList.add('menu-item');
+  // const menu_item_contact = document.createElement('li');
+  // menu_item_contact.textContent = 'Contact us';
+  // menu_item_contact.classList.add('menu-item');
 
-  menu_items.appendChild(menu_item_home);
-  menu_items.appendChild(menu_item_menu);
-  menu_items.appendChild(menu_item_contact);
+  // menu_items.appendChild(menu_item_home);
+  // menu_items.appendChild(menu_item_menu);
+  // menu_items.appendChild(menu_item_contact);
 
-  nav.appendChild(restaurant_name);
-  nav.appendChild(menu_items);
+  // nav.appendChild(restaurant_name);
+  // nav.appendChild(menu_items);
 
   const main_content = document.createElement('div');
   main_content.setAttribute('id', 'main-content');
@@ -113,8 +114,8 @@ const displayContactPage = (() => {
   contact_page_content.appendChild(contact_form);
   contact_page_content.appendChild(restaurant_info);
 
-  content.appendChild(nav);
-  content.appendChild(contact_page_content);
+  // content.appendChild(nav);
+  changing_content.appendChild(contact_page_content);
 
 
 

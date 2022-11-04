@@ -4,6 +4,7 @@ const displayMenuPage = (() =>
 {
 
   const content = document.querySelector('#content');
+  const changing_content = document.querySelector('#changing-content');
 
   const nav = document.createElement('nav');
 
@@ -71,6 +72,7 @@ const displayMenuPage = (() =>
 
     menu_food_items.appendChild(food_item);
 
+
   }
 
   createFoodItem('Hamburger', '$2.49', 'Buns, patty, tomato, onions, lettuce, and our secret family recipe.');
@@ -86,8 +88,8 @@ const displayMenuPage = (() =>
   main_content.appendChild(food_menu);
   main_content.appendChild(menu_food_items);
 
-  content.appendChild(nav);
-  content.appendChild(main_content);
+  // content.appendChild(nav);
+  changing_content.appendChild(main_content);
 
 
 
